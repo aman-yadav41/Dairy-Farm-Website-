@@ -1,0 +1,295 @@
+body{
+  margin: 0;
+  font-family: Times New Roman;
+}
+
+/* Navigation Bar */
+
+#navbar{
+  width: 95%;
+  padding: 10px 0px;
+  margin: auto;
+  height: 80px;
+}
+
+#navbar ul li{
+  font-size: 25px;
+  padding-top: 5px;
+}
+#navbar ul li button{
+  background: transparent;
+  border: none;
+}
+
+#dropmenu{
+  top: 80px;
+  width: 150px;
+}
+#dropmenu a{
+  padding: 10px 10px 10px 25px;
+}
+
+
+.brand-logo img{
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+.brand-logo h1{
+  font-size: 18px;
+}
+.brand-logo p{
+  font-size: 9px;
+}
+
+
+/* home section */
+
+#home{
+  margin: 0;
+  padding-top: 80px;
+}
+
+    /*== home-1 ==*/
+    
+.home-1 h1{
+  font-size: 45px;
+}
+.home-1 h2{
+  color: white;
+  font-size: 20px;
+}
+.home-1 .btn{
+  color: black;
+  background: gold;
+  margin-top: 50px;
+  padding: 5px 20px;
+  font-size: 15px;
+  z-index: 1;
+}
+
+      /*== home-2 ==*/
+
+#home .home-2{
+  padding: 20px 20px 65px 20px;
+}
+
+#home .home-2 .brand-name{
+  left: 11.5%;
+}
+
+.home-2 h1{
+  font-size: 35px;
+}
+
+/* about */
+
+#about, #product{
+  margin: 0;
+  padding-top: 80px;
+}
+
+/*== about-1 ==*/
+
+.about-1, .about-2, .about-3, .product-1, .product-2, .shop-1, .shop-2, .team{
+  flex-direction: column;
+  width: 100%;
+}
+
+.about-1 div img{
+  height: 200px;
+}
+
+/*== about-2 & ptoduct-2 ==*/
+
+.about-2{
+  margin-top: 10px;
+}
+  
+.about-2 div, .product-2 div{
+  width: 100%;
+  padding: 20px 20px;
+}
+.about-2 div h1, .product-2 div h1{
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+.about-2 div p, .product-2 div p{
+  font-size: 15px;
+}
+.about-2 div a, .history-cont a, .product-2 a{
+  text-shadow: 1px 1px 3px black;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+
+.about-2 div .img{
+  width: 350px;
+  height: 330px;
+}
+
+/*== about-3 ==*/
+
+.about-3{
+  width: 100%;
+  margin-top: 20px;
+}
+.about-3 div{
+  width: 100%;
+  padding: 0px 0px 20px 0px;
+}
+
+.about-3 .history{
+  width: 80%;
+  margin: auto;
+  border-radius: 15px;
+  height: 25px;
+}
+.about-3 .history a{
+  padding: 10px;
+  margin: 0px;
+  font-size: 20px;
+}
+
+.history-cont h1{
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.history-cont p{
+  font-size: 15px;
+}
+
+.about-3 .history-image{
+  height: 400px;
+}
+
+
+/* product */
+
+#product{
+  margin: 0;
+  padding-top: 80px;
+}
+
+/*== product-1 & shop-1 & tean==*/
+
+.product-1, .shop-1, .team{
+  width: 96%;
+  margin: auto;
+}
+.product-1 div, .shop-1 div, .team div{
+  margin: 15px 40px;
+  text-align: center;
+}
+.product-1 .product-image, .team .team-image{
+  width: 250px;
+  height: 250px;
+}
+
+/*== product-2 ==*/
+
+.product-2{
+  margin-top: 10px;
+}
+
+.product-2 div .img{
+  width: 350px;
+  height: 330px;
+}
+
+/* shop */
+
+#shop{
+  margin: 0;
+  padding-top: 80px;
+}
+
+/*== shop-1 ==*/
+
+.shop-1 div{
+  padding: 10px 10px 20px 10px;
+  margin: 10px 0px;
+}
+
+.shop-1 .shop-image{
+    width: 300px;
+}
+
+/*== shop-1 ==*/
+
+.shop-2{
+  width: 100%;
+}
+
+.shop-2 .shop-img-1, .shop-2 .shop-img-2{
+  padding: 40px;
+  margin: 5px;
+  width: 100%;
+}
+
+
+/* team */
+
+#team{
+  margin: 0;
+  padding-top: 80px;
+}
+
+.team{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.team div{
+  margin: 5px;
+}
+
+
+/* contact */
+
+#contact{
+  margin: 0;
+  padding-top: 95px;
+}
+
+.contact{
+  flex-direction: column;
+  padding: 10px;
+}
+.contact .contact-content{
+  width: 100%;
+  padding: 5px 20px;
+  margin: 10px;
+}
+.contact-content h2{
+  margin: 10px 0px;
+  font-size: 18px;
+}
+
+.contact-content a{
+  font-size: 25px;
+  margin: 0px 5px;
+  padding: 10px 15px;
+}
+
+.contact-content input, .contact-content textarea{
+            width: 100%;
+}
+.contact-content h1{
+    font-size: 30px;
+}
+
+
+/* footer */
+
+footer{
+  font-size: 10px;
+}
+
+/* utility classes */
+
+.h-line{
+  width: 60%;
+  height: 5px;
+}
