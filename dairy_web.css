@@ -1,0 +1,546 @@
+body{
+  margin: 0;
+  font-family: Times New Roman;
+}
+
+/* Navigation Bar */
+
+#header{
+  background: white;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+}
+#navbar{
+  width: 60%;
+  padding: 20px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 95px;
+}
+
+#navbar ul{
+  list-style: none;
+  padding: 10px;
+}
+#navbar ul li{
+  font-size: 30px;
+  position: relative;
+}
+#navbar ul li button{
+  background: transparent;
+  border: none;
+  pointer: cursor;
+}
+
+#dropmenu{
+  display: none;
+  position: absolute;
+  top: 95px;
+  left: 0%;
+  width: 200px;
+  height: 10000px;
+  background: gold;
+  margin: 0px;
+  z-index: 5;
+}
+
+#dropmenu a{
+  text-align: left;
+  display: block;
+  padding: 15px 15px 15px 35px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,0.4);
+  color: black;
+  font-weight: bolder;
+  transition: all ease 0.3s;
+}
+#dropmenu a:hover{
+  background: yellow;
+}
+
+
+.brand-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand-logo img{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.brand-logo h1{
+  font-weight: bolder;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px 2px black;
+}
+.brand-logo h1 :nth-child(2){
+  color: gold;
+}
+
+/* home section */
+
+#home{
+  margin: 0;
+  padding-top: 95px;
+}
+
+#home .home-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('https://cdn.pixabay.com/photo/2018/03/10/12/10/cow-3213932_1280.jpg') top;
+  background-size: cover;
+  height: 535px;
+  position: relative;
+}
+
+.home-1 h1{
+  color: white;
+  font-weight: bold;
+  font-size: 140px;
+  z-index: 1;
+}
+.home-1 h2{
+  color: white;
+  font-size: 40px;
+  z-index: 1;
+}
+.home-1 .btn{
+  color: black;
+  background: gold;
+  margin-top: 50px;
+  padding: 15px 45px;
+  font-size: 20px;
+  z-index: 1;
+}
+
+#home .home-2{
+  background: gold;
+  text-align: center;
+  padding: 40px 40px 100px 40px;
+  margin: 0px 0px 150px 0px;
+  position: relative;
+  z-index: -2;
+}
+#home .home-2 .milk-splash{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 400px;
+  z-index: -1;
+}
+#home .home-2 .brand-name{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  bottom: -45%;
+  left: 40%;
+  right: 33%;
+}
+
+.home-2 h2{
+  font-weight: bolder;
+}
+.home-2 p{
+  font-weight: bold;
+} 
+
+/* about */
+
+#about, #product{
+  margin: 0;
+  padding-top: 95px;
+}
+
+/*== about-1 ==*/
+
+.about-1, .about-2, .about-3, .product-1, .product-2, .shop-1, .shop-2, .team{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+}
+.about-1 div{
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+.about-1 div img{
+  width: 100%;
+  height: 300px;
+}
+.about-1 div a, .shop-1 div a{
+  text-decoration: none;
+  color: black;
+  background: gold;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/*== about-2 & ptoduct-2 ==*/
+
+.about-2{
+  width: 100%;
+  margin-top: 100px;
+  background: url('https://images.unsplash.com/photo-1596733430284-f7437764b1a9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')center/cover;
+}
+.about-2 div, .product-2 div{
+  width: 50%;
+  padding: 20px 100px;
+  text-align: left;
+}
+.about-2 div h1, .about-2 div p, .product-2 div h1, .product-2 div p{
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  margin-bottom: 50px;
+}
+.about-2 div a, .history-cont a, .product-2 a{
+  text-decoration: none;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 8px;
+  font-size: 25px;
+  padding: 10px 20px;
+}
+
+
+.about-2 div .img{
+  width: 500px;
+  height: 480px;
+  border-radius: 50%;
+  background: url('https://images.unsplash.com/photo-1737091984731-caa9454a1eae?q=80& w=1170&auto=format&fit=crop&ixlib=rb -4.1.0&ixid=M3wxMjA3fDB8MHxwaG9 0by1wYWdIfHx8fGVufDB8fHx8fA%3D %3D')center;
+  background-size: cover;
+}
+
+/*== about-3 ==*/
+
+.about-3{
+  width: 94%;
+  margin: auto;
+  margin-top: 100px;
+  background: rgb(248,247,180);
+  justify-content: top;
+}
+.about-3 div{
+  width: 50%;
+  padding: 0px;
+  text-align: center;
+}
+
+.about-3 .history{
+  background: rgb(202,124,19);
+  width: 90%;
+  margin: auto;
+  margin: 20px;
+  border-radius: 25px;
+}
+.about-3 .history a{
+  padding: 20px;
+  margin: 20px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+.about-3 .history-cont{
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+.history-cont h1, .history-cont p{
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.history-cont a{
+  border-color: black;
+  color: black;
+}
+
+.about-3 .history-image{
+  width: 100%;
+  height: 500px;
+  background: url('https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h 8M3x8Y293fGVufDB8fDB8fHww') center/cover;
+}
+
+
+/* product */
+
+#product{
+  margin: 0;
+  padding-top: 95px;
+}
+
+/*== product-1 & shop-1 & tean==*/
+
+.product-1, .shop-1, .team{
+  width: 94%;
+}
+.product-1 div, .shop-1 div, .team div{
+  margin: 15px;
+  text-align: center;
+}
+.product-1 .product-image, .team .team-image{
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  border: 2px solid silver;
+  overflow: hidden;
+}
+.product-image img{
+  width: 100%;
+}
+
+/*== product-2 ==*/
+
+.product-2{
+  width: 100%;
+  margin-top: 100px;
+  background: url('https://cdn.pixabay.com/photo/2019/09/11/21/03/dessert-4469955_1280.jpg')center/cover;
+}
+
+.product-2 div .img{
+  width: 500px;
+  height: 480px;
+  border-radius: 50%;
+  background: url('https://cdn.pixabay.com/photo/2018/03/20/20/51/coffee-3244636_1280.jpg')center;
+  background-size: cover;
+}
+
+/* shop */
+
+#shop{
+  margin: 0;
+  padding-top: 95px;
+}
+
+/*== shop-1 ==*/
+
+.shop-1 div{
+  padding: 20px 20px 40px 20px;
+  margin: 50px 10px 10px 10px;
+  text-align: center;
+  border: 2px solid gold;
+}
+.shop-1 div h4, .shop-1 div p, .shop-1 div a{
+  margin-bottom: 10px;
+}
+
+.shop-1 .shop-image{
+    width: 260px;
+    height: 200px;
+    border: none;
+    margin: 0px;
+}
+.shop-image img{
+  width: 100%;
+}
+
+/*== shop-1 ==*/
+
+.shop-2{
+  width: 98%;
+  margin: auto;
+}
+
+.shop-2 .shop-img-1{
+  padding: 40px;
+  margin: 20px;
+  width: 60%;
+  background: url('https://cdn.pixabay.com/photo/2016/08/27/04/00/almond-milk-1623610_1280.jpg')center/cover;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+.shop-2 .shop-img-2{
+  padding: 40px;
+  margin: 20px;
+  width: 40%;
+  background: url('https://cdn.pixabay.com/photo/2017/04/18/15/10/strawberry-ice-cream-2239377_1280.jpg')center/cover;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+/* team */
+
+#team{
+  margin: 0;
+  padding-top: 95px;
+}
+
+.team{
+  width: 100%;
+  background: url('https://cdn.pixabay.com/photo/2022/05/16/13/49/cow-7200409_1280.jpg')center/cover;
+  margin-top: 30px;
+}
+
+.team div{
+  margin: 15px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.team-image{
+  position: relative;
+}
+
+.team-image img{
+  width: 100%;
+  transition: all ease 1s;
+}
+
+/* contact */
+
+#contact{
+  margin: 0;
+  padding-top: 95px;
+}
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: url('https://cdn.pixabay.com/photo/2017/05/16/17/33/holstein-cattle-2318436_640.jpg')center/cover;
+  width: 100%;
+  padding: 20px;
+  margin-top: 30px;
+  position: relative;
+}
+.contact .contact-content{
+  width: 50%;
+  color: white;
+  z-index: 1;
+  padding: 40px;
+  margin: 20px;
+}
+.contact-content h2{
+  margin: 20px 0px;
+}
+
+.contact-content a{
+  text-decoration: none;
+  font-size: 45px;
+  margin: 10px;
+  padding: 15px 20px;
+  color: white;
+  border: 1px solid rgba(0,0,0,0.4);
+  border-radius: 50%;
+  background: rgba(0,0,0,0.4);
+  transition: all ease 0.5s;
+}
+.contact-content a:hover{
+  background: rgba(0,0,0,0.8);
+}
+
+.contact-content input, .contact-content textarea{
+            background: transparent;
+            width: 95%;
+            color: white;
+            border: 2px solid white;
+            border-radius: 18px;
+            padding: 10px 20px;
+            margin: 10px 0px;
+}
+
+.contact-content button{
+    background: rgb(25, 165, 178);
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 5px 15px;
+    transition: all ease 0.2s;
+}
+.contact-content button:hover{
+  box-shadow: 1px 1px 5px rgb(152,231,234);
+}
+
+/* footer */
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(37, 4, 37);
+  font-size: 20px;
+  height: 40px;
+  padding: 20px 20px;
+  color: white;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+footer a:hover{
+  color: white;
+}
+/* utility classes */
+
+.h-line{
+  background: radial-gradient(ellipse at center, gray 0% , white 100%);
+  width: 20%;
+  height: 10px;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 45px;
+}
+.home-design{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.6;
+}
+
+/* disigning classes */
+
+.team-contact{
+  position: absolute;
+  top: -6%;
+  left: -6%;
+  width: 280px;
+  height: 280px;
+  padding: 60px;
+  align-content: flex-end;
+  background: rgba(0,0,0,0.6);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all ease-in 0.6s;
+}
+.team-contact a{
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+}
+.team-image:hover .team-contact{
+   opacity: 1;
+}
+.team-image:hover .img1{
+  transform: scale(1.1);
+}
+
+form{
+  padding: 20px;
+  border-radius: 20px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
